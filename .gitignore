@@ -50,3 +50,5 @@ rsconnect/
 Code/.DS_Store
 .DS_Store
 /paper
+bibliography.bib
+README.Rmd
