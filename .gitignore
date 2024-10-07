@@ -52,3 +52,5 @@ Code/.DS_Store
 /paper
 bibliography.bib
 README.Rmd
+README.qmd
+references.bib
