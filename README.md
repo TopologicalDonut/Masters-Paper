@@ -22,6 +22,6 @@ in a causal forest.
 
 [^1]: Bénard, Clément, and Julie Josse. 2023. “Variable Importance for Causal
 Forests: Breaking down the Heterogeneity of Treatment Effects.”
-<https://doi.org/10.48550/ARXIV.2308.03369>.]
+<https://doi.org/10.48550/ARXIV.2308.03369>.
 
 
