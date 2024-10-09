@@ -17,7 +17,7 @@ The results are used in the appendix of my paper.
 
 `code/vimp_causal_forests.R`: This is a slightly modified version of a
 function that was created and used by the authors of Bénard and Josse
-(2023) It is an implementation of a method to calculate the proportion
+(2023). It is an implementation of a method to calculate the proportion
 of treatment effect variation that is explained by each covariate used
 in a causal forest.
 
