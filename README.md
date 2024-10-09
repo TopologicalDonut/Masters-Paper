@@ -16,13 +16,12 @@ interaction terms when the true data generating process is nonlinear.
 The results are used in the appendix of my paper.
 
 `code/vimp_causal_forests.R`: This is a slightly modified version of a
-function that was created by Bénard and Josse [[1]](#1). It is an implementation of a method to calculate the proportion
+function that was created by Bénard and Josse[^1]. It is an implementation of a method to calculate the proportion
 of treatment effect variation that is explained by each covariate used
 in a causal forest.
 
-# References
-
-<a id="1">[1]</a> 
-Bénard, Clément, and Julie Josse. 2023. “Variable Importance for Causal
+[^1]: Bénard, Clément, and Julie Josse. 2023. “Variable Importance for Causal
 Forests: Breaking down the Heterogeneity of Treatment Effects.”
-<https://doi.org/10.48550/ARXIV.2308.03369>.
+<https://doi.org/10.48550/ARXIV.2308.03369>.]
+
+
