@@ -153,12 +153,11 @@ analyze_rankings <- function(aipw_scores, ranking, num_rankings) {
 
 #' Computes ATE for different subgroups.
 #'
-#' @param group         Subgroup variable name
-#' @param aipw_scores   AIPW scores from forest analysis.
-#' @param data          Dataset containing subgroup variables (usually same as
-#'                      forest dataset).
+#' @param group        Subgroup variable name
+#' @param aipw_scores  AIPW scores from forest analysis.
+#' @param data         Dataset containing subgroup variables (usually same as forest dataset).
 #' 
-#' @return              Data frame with ATE results by subgroup.
+#' @return             Data frame with ATE results by subgroup.
 compute_subgroup_ate <- function(group, aipw_scores, data) {
   group_data <- split(aipw_scores, data[[group]])
   means <- sapply(group_data, mean)
@@ -181,9 +180,9 @@ compute_subgroup_ate <- function(group, aipw_scores, data) {
 
 #' Computes difference in ATEs between groups
 #' 
-#' @param ate_subgroup_result Data frame with ATE results for a subgroup
+#' @param ate_subgroup_result  Data frame with ATE results for a subgroup
 #' 
-#' @return                    Named vector with difference, standard error, and t-statistic
+#' @return                     Named vector with difference, standard error, and t-statistic
 compute_subgroup_ATE_diff <- function(ate_subgroup_result) {
   diff <- ate_subgroup_result$ATE[2] - ate_subgroup_result$ATE[1]
   se_diff <- sqrt(sum(ate_subgroup_result$SE^2))
