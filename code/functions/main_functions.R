@@ -81,8 +81,7 @@ summary_rw_lm <- function(model, indices=NULL, cov_type="HC2", num_boot=10000) {
 #' @return              List containing trained forest and other required outputs.
 fit_causal_forest <- function(data, covariates, treatment, outcome, num_rankings = 3,
                               num_folds = 5, num_trees = 4000, W_hat = NULL) {
-  
-  # Prepare model matrices
+  # grf needs data in specific format
   fmla <- formula(paste0("~ 0 + ", paste0(covariates, collapse="+")))
   X <- model.matrix(fmla, data)
   W <- data[,treatment]
@@ -92,7 +91,6 @@ fit_causal_forest <- function(data, covariates, treatment, outcome, num_rankings
   # Assign folds for cross-fitting
   folds <- sample(rep(1:num_folds, length.out = n))
   
-  # Fit forest
   forest <- causal_forest(X, Y, W, 
                           W.hat = W_hat,
                           clusters = folds, 
