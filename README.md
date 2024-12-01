@@ -15,7 +15,7 @@ performance of a causal forest against standard linear regression with
 interaction terms when the true data generating process is nonlinear.
 The results are used in the appendix of my paper.
 
-`code/vimp_causal_forests.R`: This is a slightly modified version of a
+`code/functions/vimp_causal_forests.R`: This is a slightly modified version of a
 function that was created by Bénard and Josse[^1]. It is an implementation of a method to calculate the proportion
 of treatment effect variation that is explained by each covariate used
 in a causal forest.
